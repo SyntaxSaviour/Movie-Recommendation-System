@@ -4,7 +4,7 @@
 This project is a **Content-Based Movie Recommendation System** built using the [TMDB Movie Metadata dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata).  
 It recommends movies similar to a given movie by analyzing metadata such as **genres, keywords, cast, director, and overview**.
 
----
+
 
 ## 🚀 Steps Implemented
 1. **Load Dataset** → `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv`  
@@ -13,7 +13,7 @@ It recommends movies similar to a given movie by analyzing metadata such as **ge
 4. **Similarity Measure** → computed **Cosine Similarity** to find the most similar movies  
 5. **Recommendation Function** → takes a movie title as input and outputs the **Top 5 most similar movies**
 
----
+
 
 ## 🛠️ Tech Stack
 - **Python**
@@ -21,7 +21,6 @@ It recommends movies similar to a given movie by analyzing metadata such as **ge
 - **Scikit-learn**
 - **NumPy**
 
----
 
 ## 🎯 Results
 Example queries and top recommendations:  
@@ -30,13 +29,20 @@ Example queries and top recommendations:
 - **Spectre** → Skyfall, Quantum of Solace, Casino Royale  
 - **Pirates of the Caribbean: At World's End** → Other Pirates movies at the top  
 
----
+
 
 ## 📂 How to Run
 1. Download the dataset from Kaggle and place the files inside a folder named **`data/`**:
-   - `tmdb_5000_movies.csv`
-   - `tmdb_5000_credits.csv`
+   ```tmdb_5000_movies.csv```
+   ```tmdb_5000_credits.csv```
 2. Run the Jupyter Notebook or Kaggle Notebook cells step by step.  
 3. Use the function:
-   ```python
+   ```bash
    recommend("Avatar", n=5)
+   ```
+
+## ✅ Future Improvements
+
+- Add Collaborative Filtering if user ratings are available
+- Experiment with Word Embeddings or Transformers for semantic similarity
+- Build a simple Streamlit Web App for interactive recommendations
