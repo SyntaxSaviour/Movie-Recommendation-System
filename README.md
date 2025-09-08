@@ -37,7 +37,7 @@ Example queries and top recommendations:
      tmdb_5000_movies.csv
      tmdb_5000_credits.csv
    ```
-   3. Run the Jupyter Notebook or Kaggle Notebook cells step by step.  
+3. Run the Jupyter Notebook or Kaggle Notebook cells step by step.  
 4. Use the function:
    
    ```bash
